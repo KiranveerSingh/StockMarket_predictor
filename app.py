@@ -538,3 +538,5 @@ elif page == "About Us":
              
         
     """)
+
+    st.markdown("Find me on [GitHub](https://github.com/KiranveerSingh)")
