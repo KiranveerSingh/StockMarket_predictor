@@ -135,24 +135,113 @@ def preprocess_input(input_df):
 
 
 # Sidebar navigation
-st.sidebar.title("Navigation")
+st.sidebar.title("Home")
 page = st.sidebar.radio("Go to:", ["Introduction", "Prediction", "Know More Companies", "About Us"])
+
+
+
 
 if page == "Introduction":
     st.header("Introduction")
     st.write("""
-    The stock market is a centralized platform where shares of publicly traded companies are bought and sold. It plays a crucial role in the global financial system, serving as a barometer of economic health and providing a structured environment for companies to raise capital and for investors to grow wealth.
+    🔹 What is the Stock Market?
+        The stock market is a public platform that enables individuals and institutions to buy, sell, and trade shares (also known as stocks or equities) of publicly listed companies. It is a key component of the financial system, facilitating capital formation, investment, and economic growth.
 
-    In simple terms, the stock market allows investors to purchase a small ownership stake—called a share—in businesses they believe will succeed. These shares are traded on stock exchanges such as the Bombay Stock Exchange (BSE) and National Stock Exchange (NSE) in India.
+    🔹 Key Concepts
+        1. Stock
+            A stock represents a fractional ownership in a company. For example, if you own 100 shares of a company that has issued 1 million shares, you own 0.01% of that company.
 
-    The prices of stocks fluctuate based on a wide range of factors, including company performance, economic indicators, investor sentiment, and global events. The stock market also includes other instruments such as bonds, mutual funds, ETFs, and derivatives.
+        2. Shareholder
+            Anyone who owns at least one share of a company is called a shareholder, and they are entitled to a share of the company's profits (dividends) and voting rights.
 
-    Key participants in the stock market include:
-    - Retail Investors: Individuals who buy and sell stocks through brokers.
-    - Institutional Investors: Banks, insurance companies, mutual funds, and pension funds.
-    - Regulators: Authorities like SEBI (Securities and Exchange Board of India) ensure market fairness, transparency, and investor protection.
+        3. Stock Exchange
+            A stock exchange is a centralized marketplace where stocks are traded. In India, the two main exchanges are:
 
-    Investing in the stock market can offer high returns, but it also comes with risks. Hence, understanding market dynamics and informed decision-making are critical for success.
+            BSE (Bombay Stock Exchange) – oldest in Asia, established in 1875
+
+            NSE (National Stock Exchange) – founded in 1992, introduced electronic trading
+
+    🔹 How the Stock Market Works
+        Company Listing: A company goes public by issuing shares via an Initial Public Offering (IPO).
+
+        Trading Begins: Once listed, investors can buy or sell these shares through stock exchanges.
+
+        Price Fluctuation: Stock prices are determined by supply and demand, influenced by:
+
+        Company performance
+
+        Industry growth
+
+        Economic indicators (GDP, inflation, interest rates)
+
+        Market sentiment (news, rumors, global trends)
+
+        Settlement: After a trade, ownership is transferred within T+1 day in India.
+
+    🔹 Types of Markets
+        Type of Market	Description
+        Primary Market	Where securities are created (IPOs)
+        Secondary Market	Where securities are traded after the IPO
+        Cash Market	Full payment must be made for buying shares
+        Derivatives Market	Futures and options based on stock prices
+        Commodities & Currency	Traded via exchanges like MCX & NSE FX
+
+    🔹 Market Participants
+        Participant Type	Role
+        Retail Investors	Individual investors
+        Institutional Investors	Mutual funds, insurance companies, banks
+        SEBI	Regulator ensuring transparency and fairness
+        Brokers	Intermediaries who execute trades
+        Market Makers	Ensure liquidity by placing buy/sell orders
+
+    🔹 Stock Market Indices
+        An index tracks the performance of a group of stocks to represent market trends.
+
+        Index	Description
+        Nifty 50	Top 50 companies on NSE
+        Sensex	Top 30 companies on BSE
+        Bank Nifty	Major banks listed on NSE
+        Midcap, Smallcap	Medium and small-sized companies
+
+    🔹 Benefits of Stock Market
+        💰 Capital for Companies: Helps companies raise funds for growth
+
+        📈 Wealth Creation: Long-term investment can generate significant returns
+
+        🔄 Liquidity: Easy to buy/sell shares
+
+        👥 Democratization of Ownership: Anyone can own a piece of a major company
+
+    🔹 Risks Involved
+        📉 Market Volatility: Prices fluctuate daily
+
+        🧠 Emotional Investing: Fear and greed can cause irrational decisions
+
+        💼 Company Risk: A company's poor performance may impact share prices
+
+        🌍 Global Events: Geopolitical and economic events can impact all markets
+
+    🔹 Tools & Platforms
+        Brokerage apps: Zerodha, Groww, Upstox, Angel One
+
+        Market data providers: NSE India, Moneycontrol, TradingView
+
+        Stock screeners: Screener.in, TickerTape, Equitymaster
+
+    📚 Real-World Examples
+        Reliance Industries raised billions through the stock market to fund Jio and retail expansion.
+
+        Zomato, Paytm, Nykaa IPOs brought tech startups into the public market.
+
+        COVID-19 crash (2020) and recovery showed both risk and opportunity in equity investing.
+
+    🏦 Regulatory Body – SEBI
+        Securities and Exchange Board of India (SEBI) is the primary regulator.
+
+        Its role is to protect investors, develop the market, and regulate intermediaries.
+
+        SEBI also introduces rules for IPOs, mutual funds, insider trading, etc.
+
     """)
 
 elif page == "Prediction":
