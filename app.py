@@ -139,7 +139,7 @@ page = st.sidebar.radio("Go to:", ["Introduction", "Prediction", "Model Used Inf
 
 
 if page == "Introduction":
-    image_path = r"C:\My stuff\Coding\ML project\KiranveerSingh_projectfinal\Images\OIP.jpeg"
+    image_path = os.path.join("Images", "OIP.jpeg")
     st.image(image_path, use_container_width=True)
 
     st.header("Introduction")
